@@ -60,7 +60,7 @@ paramstr_2 =  paramstr_2{XX};
 sweep_n=1;
 
 profile_data(length(sweeprange_1)*length(sweeprange_2)).name = 'init' %initialise data structure
-system('echo Archie2010 | sudo -S -k whoami');
+system('echo ********** | sudo -S -k whoami');
 
 for loopVar_1 = sweeprange_1;
     param(X) = loopVar_1;
@@ -88,6 +88,6 @@ end
 
 
 % save(['/home/',username,'/Documents/WRspice/Outputs/',timestamp,'/Workspace.mat'])
-system('echo Archie2010 | sudo -S -k whoami');
+system('echo ********** | sudo -S -k whoami');
 command = 'echo 3 | sudo tee /proc/sys/vm/drop_caches';
 system(command);
